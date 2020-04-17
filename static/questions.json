@@ -1,0 +1,174 @@
+{
+    "name": "questions for feedback",
+    "version": "1.0",
+    "owner": "MRIET",
+    "date_of_creation": "22 January 2020",
+    "alumni_feedback_FBA": "101",
+    "employer_feedback_FBEG": "102",
+    "parent_feedback": "103",
+    "SEFB": "104",
+    "PEO": "105",
+    "PO": "106",
+    "student_feedback_on_labs": "107",
+    "student_feedback_on_faculty": "108",
+    "faculty_feedback": "109",
+    "employer_feedback_FBE": "110",
+
+
+    "101":
+    {
+"1":	"Infrastructure of the College"	,
+"2"	:	"Resources available in the department",
+"3"	:	"Faculty Guidance",
+"4"	:	"Lab facilities/Functioning",
+"5"	:	"Internet Facility",
+"6"	:	"Extracurricular Activities",
+"7"	:	"Placement Opportunities",
+"8"	:	"Training activities",
+"9"	:	"Transport Facilities"	,
+"10":	"Canteen Facilities",
+"11":	"Student discipline in college",
+"12":	"Designing of programs for students development",
+"13":	"Overall opinion on college functioning"
+    },
+
+
+    "102":
+    {
+"1"	:	"How do the MRIET graduates compare with graduates from other institutions",
+"2"	:	"What grade would you use to describe MRIET and its graduates"	,
+"3"	:	"Adaptability of MRIET graduates to industry requirements",
+"4"	:	"Quality of the skills attained by the graduates of MRIET",	
+"4.1":  "Communication"	,
+"4.2":	"TECHNICAL"	,
+"4.3":	"LIFE SKILLS",	
+"4.4":	"VERBAL"	,
+"5"	:	"Skills of Faculty towards Teaching"	,
+"5.1":	"Employee performance"	,
+"5.2":  "Employee Technical Skills",	
+"5.3":	"Attitude of employee"	,
+"5.4":	"Communication and Passion towards growth"	      
+    },
+
+
+    "103":
+    {
+"1"	:	"Infrastructure of the College"	,
+"2"	:	"Resources available in the Department",
+"3"	:	"Faculty Guidance",
+"4"	:	"Laboratory Facilities / Functioning",
+"5"	:	"Internet Facility"	,
+"6"	:	"Extra-curricular Activities",
+"7"	:	"Placement Opportunities",	
+"8"	:	"Training Activities",	
+"9"	:	"Transport Facilities",	
+"10":	"Canteen Facilities",	
+"11":	"Student Discipline in College",
+"12":	"Designing of Programs for Students",
+"13":	"Overall Opinion on College Functioning",
+"14":	"Advanced Study through Workshops / Seminars / Guest Lectures"	
+    },
+
+
+    "104":
+    {
+"1"	:	"How do the MRIET graduates compare with graduates from other institutions",
+"2"	:	"What grade would you use to describe MRIET and its graduates"	,
+"3"	:	"Adaptability of MRIET graduates to industry requirements",
+"4"	:	"Quality of the skills attained by the graduates of MRIET",	
+"4.1":  "Communication"	,
+"4.2":	"TECHNICAL"	,
+"4.3":	"LIFE SKILLS",	
+"4.4":	"VERBAL"	,
+"5"	:	"Skills of Faculty towards Teaching"	,
+"5.1":	"Employee performance"	,
+"5.2":  "Employee Technical Skills",	
+"5.3":	"Attitude of employee"	,
+"5.4":	"Communication and Passion towards growth"
+    },
+
+
+    "105":
+    {
+"PEO 1":	"Graduates shall have fundamental and advanced knowledge in mathematics, science, engineering and interdisciplinary engineering to emerge as technocrats.",	
+"PEO 2":	"Graduates shall have capabilities to design and develop innovative solutions for benefits of society, by diligence, team work and lifelong learning."	,
+"PEO 3":	"Graduates shall get employed in industries or pursue higher studies or research assignments or turn as entrepreneurs."	,
+"PEO 4":	"Graduates shall have good communication skills, leadership skills, professional, ethical and social responsibilities."	  
+    },
+
+
+    "106":
+    {
+"PO 1":	    "Engineering Knowledge: Apply the knowledge of mathematics, science, engineering fundamentals, and an engineering specialization to the solution of complex engineering problems." 	,
+"PO 2":	    "Problem Analysis: Identify, formulate, review research literature, and analyze complex engineering problems reaching substantiated conclusions using first principles of mathematics, natural sciences, and engineering sciences."	,
+"PO 3":	    "Design/development of solutions: Design solutions for complex engineering problems and design system components or processes that meet the specified needs with appropriate consideration for the public health and safety, and the cultural, societal, and environmental considerations." 	,
+"PO 4":	    "Conduct investigations of complex problems: Use research-based knowledge and research methods including design of experiments, analysis and interpretation of data, and synthesis of the information to provide valid conclusions." 	,
+"PO 5":	    "Modern tool usage: Create, select, and apply appropriate techniques, resources, and modern engineering and IT tools including prediction and modeling to complex engineering activities with an understanding of the limitations. "	,
+"PO 6":	    "The engineer and society: Apply reasoning informed by the contextual knowledge to assess societal, health, safety, legal and cultural issues and the consequent responsibilities relevant to the professional engineering practice." 	,
+"PO 7":	    "Environment and sustainability: Understand the impact of the professional engineering solutions in societal and environmental contexts, and demonstrate the knowledge of, and need for sustainable development. "	,
+"PO 8":	    "Ethics: Apply ethical principles and commit to professional ethics and responsibilities and norms of the engineering practice." 	,
+"PO 9":	    "Individual and team work: Function effectively as an individual, and as a member or leader in diverse teams, and in multidisciplinary settings." 	,
+"PO 10":	"Communication: Communicate effectively on complex engineering activities with the engineering community and with society at large, such as, being able to comprehend and write effective reports and design documentation, make effective presentations, and give and receiveclear instructions." 	,
+"PO 11":    "Project management and finance: Demonstrate knowledge and understanding of the engineering and management principles and apply these to one’s own work, as a member and leader in a team, to manage projects and in multidisciplinary environments." 	,
+"PO 12":	"Life-long learning: Recognize the need for, and have the preparation and ability to engage in independent and life-long learning in the broadest context of technological change."
+    },
+
+
+    "107":
+    {
+"1":	"Are the experiments of the Lab Classes conducted as per schedule provided? (YES / NO)"		,		
+"2":	"Are the Equipment's provided sufficient? (YES / NO)"				,
+"3":    "Are the Equipment's provided in working condition? (YES / NO)"		,
+"4":	"Are the Lab Consumables provided of Good Quality? (YES / NO)"		,		
+"5":	"How many experiments were conducted as per University Norms?"		,		
+"6":	"How many experiments were conducted over and Above the University Syllabus?",				
+"7":	"The Lab Manual Provided was complete in covering the Syllabus and informative? (YES / NO)"		,		
+"8":	"Whether the lab assistant/technician are assisting you (YES / NO)"				,
+"9":	"Whether the lab in-charges (Faculties) are helpful in the Lab (YES / NO)"				
+    },
+
+
+    "108":
+    {
+"1": "Teacher comes to the class in time",			
+"2": "Teacher comes well planned and prepared"		,			
+"3": "Teacher speaks clearly and audibly"			,		
+"4": "Teacher provides examples of concepts /principles, explanations are done effectively"	,				
+"5" : "Teacher writes and draws legibly"					,
+"6" : "Teacher encourages questioning/raising doubts by students and answer them well"		,			
+"7" : "Teacher is courteous and impartial in dealing with students"					,
+"8" : "Teacher engages classes regularly and maintains discipline",
+"9" : "Teacher completes the syllabus completely at appropriate pace",
+"10" : "Teacher is prompt in valuing and returning the answer scripts providing feedback on performance"					
+    },
+
+
+    "109":
+    {
+"1":	"Management Attitude"		              ,
+"2":	"Attitude of the Administration"		,
+"3":	"Motivational Incentives"			,
+"4":	"Salary and other emoluments"	,
+"5":	"Service Conditions"			,
+"6":	"Opportunities for Professional Growth"	,
+"7":	"Opportunities for Personal Growth"	,
+"8":	"Infrastructure Facilities"			,
+"9":	"Library Facilities"				,
+"10":	"Computing and Internet Facilities"	,	
+"11":	"Opportunities for R&D"			,
+"12":	"Sports, Extra Curricular Facilities"	,	
+"13":	"Mess/Canteen Facilities"			,
+"14":	"Transport Facilities"			,
+"15":	"Overall rating of the College"
+    },
+
+
+    "110":
+    {
+        "1":	"Performance of the staff" 		,
+"2":	"Technical Skills"				,
+"3":	"Attitude"					,
+"4":	"Interpersonal Skills"		,
+"5":	"Passion for Growth"
+    }
+}

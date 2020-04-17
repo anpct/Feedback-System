@@ -1,0 +1,70 @@
+   {% extends 'base.html' %}
+   {% block title %}FEEDBACK{% endblock %}
+   {% block content %}
+         {% if msg!=None %}
+  <div class="alert alert-success">
+  <strong>{{ msg }}!</strong>
+</div>
+  {%  endif %}
+   <ul class="nav navbar-expand-sm nav-tabs">
+    <li class="nav-item dropdown">
+    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">STUDENTS</a>
+    <div class="dropdown-menu">
+      <a class="dropdown-item" href="{{ url_for('students', type='SEFB') }}">STUDENT EXIT FEEDBACK</a>
+      <a class="dropdown-item" href="{{ url_for('students', type='PEO') }}">STUDENT EXIT FEEDBACK WITH PEO'S</a>
+      <a class="dropdown-item" href="{{ url_for('students', type='PO') }}">STUDENT EXIT FEEDBACK WITH PO'S</a>
+      <a class="dropdown-item" href="{{ url_for('students', type='LAB') }}">STUDENT FEEDBACK ON LABS</a>
+      <a class="dropdown-item" href="{{ url_for('students', type='FACULTY') }}">STUDENT FEEDBACK ON FACULTY</a>
+    </div>
+  </li>
+        <li class="nav-item dropdown">
+    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">FACULTY</a>
+    <div class="dropdown-menu">
+      <a class="dropdown-item" href="{{ url_for('faculty') }}">FEEDBACK FROM FACULTY</a>
+      <a class="dropdown-item" href="{{ url_for('faculty') }}">FEEDBACK FROM STAFF</a>
+    </div>
+  </li>
+         <li class="nav-item dropdown">
+    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">EMPLOYER</a>
+    <div class="dropdown-menu">
+      <a class="dropdown-item" href="{{ url_for('employer', type='PEO') }}">EMPLOYERS FEEDBACK ON PEO'S</a>
+      <a class="dropdown-item" href="{{ url_for('employer', type='PO') }}">EMPLOYERS FEEDBACK ON PO'S</a>
+      <a class="dropdown-item" href="{{ url_for('employer', type='FBEG') }}">EMPLOYERS FEEDBACK ON MRIET GRADUATES</a>
+      <a class="dropdown-item" href="{{ url_for('employer', type='FBE') }}">EMPLOYERS FEEDBACK</a>
+    </div>
+  </li>
+   <li class="nav-item dropdown">
+    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">ALUMNI</a>
+    <div class="dropdown-menu">
+      <a class="dropdown-item" href="{{ url_for('alumni', type='FBA') }}">FEEDBACK ON ALUMNI</a>
+      <a class="dropdown-item" href="{{ url_for('alumni', type='PEO') }}">ALUMNI FEEDBACK WITH PEO'S</a>
+      <a class="dropdown-item" href="{{ url_for('alumni', type='PO') }}">ALUMNI FEEDBACK WITH PO'S</a>
+    </div>
+  </li>
+
+     <li class="nav-item dropdown">
+    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">PARENTS</a>
+    <div class="dropdown-menu">
+      <a class="dropdown-item" href="{{ url_for('parents', type='1') }}">FEEDBACK FROM PARENTS</a>
+      <a class="dropdown-item" href="{{ url_for('parents', type='PEO') }}">PARENTS FEEDBACK WITH PEO'S</a>
+      <a class="dropdown-item" href="{{ url_for('parents', type='PO') }}">PARENTS FEEDBACK WITH PO'S</a>
+    </div>
+  </li>
+</ul>
+<div class="jumbotron">
+  <h1>MRIET FEEDBACK PAGE</h1>
+  <p>Please leave your feedback!</p>
+</div>
+<div class="jumbotron jumbotron-fluid">
+<div class="container">
+  <h1>FEEDBACK REPORT</h1>
+  <ul class="list-group">
+  <li class="list-group-item"><a href="http://mriet.ac.in/criteria/addl/Criteria%20I/1.4/18-19.pdf">2018-2019</a></li>
+  <li class="list-group-item"><a href="http://mriet.ac.in/criteria/addl/Criteria%20I/1.4/17-18.pdf">2017-2018</a></li>
+  <li class="list-group-item"><a href="http://mriet.ac.in/criteria/addl/Criteria%20I/1.4/16-17.pdf">2016-2017</a></li>
+  <li class="list-group-item"><a href="http://mriet.ac.in/criteria/addl/Criteria%20I/1.4/15-16.pdf">2015-2016</a></li>
+  
+  </ul>
+  </div>
+</div>
+{% endblock %}

@@ -1,0 +1,159 @@
+{% extends "base.html" %}
+{% block content %}
+    <div class="a">
+    <form method="post">
+    {% if person == 'alumni' %}
+        <label for="id">Regd. No.</label><input class="form-control" type="text" id="id" name="id" required>
+        <label for="name">Name</label><input class="form-control" type="text" id="name" name="name" required>
+        <label for="job">Job</label><input class="form-control" type="text" id="job" name="job" required>
+        <label for="address">Address</label><input class="form-control" type="text" id="address" name="address" required>
+        <label for="number">Phone</label><input class="form-control" type="tel" id="number" name="number" required>
+        <label for="email">Email</label><input class="form-control" type="email" id="email" name="email" required>
+        <label for="advanced_degree">Advanced Degree (M.Tech. /Ph.D. if any)</label><input class="form-control" type="text" id="advanced_degree" name="advanced_degree">
+        <label for="university_honors">University honors/Recognitions (if any)	</label><input class="form-control" type="text" id="university_honors" name="university_honors">
+        <label for="employer_honors">Employer honors/ Recognitions (if any)</label><input class="form-control" type="text" id="employer_honors" name="employer_honors">
+  {% endif %}
+    {% if person == 'employer' and type != 'FBE' %}
+        <label for="company">Company</label><input class="form-control" type="text" id="company" name="company" required>
+        <label for="department">Department</label><input class="form-control" type="text" id="department" name="department" required>
+ <label for="name">Name of officer</label><input class="form-control" type="text" id="name" name="name" required>
+        <label for="designation">Designation of officer</label><input class="form-control" type="text" id="designation" name="designation" required>
+        <label for="number">Phone</label><input class="form-control" type="tel" id="number" name="number" required>
+        <label for="email">Email</label><input class="form-control" type="email" id="email" name="email" required>
+    {% endif %}
+    {% if person == 'employer' and type == 'FBE' %}
+         <label for="company">Company</label><input class="form-control" type="text" id="company" name="company" required>
+        <label for="name">Name of officer</label><input class="form-control" type="text" id="name" name="name" required>
+        <label for="designation">Designation of officer</label><input class="form-control" type="text" id="designation" name="designation" required>
+        <label for="namee">Name of employee</label><input class="form-control" type="text" id="namee" name="namee" required>
+        <label for="future">Would you like to consider our students for future employment: Yes / No</label><input class="form-control" type="text" id="future" name="future">
+        <label for="improve">What are your advices for further improvements on our candidates?</label><input class="form-control" type="text" id="improve" name="improve">
+    {% endif %}
+    {% if person == 'parents' %}
+        <label for="id">Regd. No.</label><input class="form-control" type="text" id="id" name="id" required>
+        <label for="name">Name</label><input class="form-control" type="text" id="name" name="name" required>
+    {% endif %}
+    {% if person == 'students' %}
+        <label for="id">Regd. No.</label><input class="form-control" type="text" id="id" name="id" required>
+        <label for="name">Name</label><input class="form-control" type="text" id="name" name="name" required>
+    {% endif %}
+    {% if person == 'faculty' %}
+        <label for="name">Name</label><input class="form-control" type="text" id="name" name="name" required>
+        <label for="years">Number of Years in the College</label><input class="form-control" type="number" id="years" name="years">
+        <label for="comments">Your Positive / Negative Comments:</label><input class="form-control" type="text" id="comments" name="comments">
+        <label for="suggestions">Your suggestions for the Improvement of the Institution / Department:</label><input class="form-control" type="text" id="suggestions" name="suggestions">
+    {% endif %}
+    <br>
+     {% if type != "LAB" %}
+    <table class="table table-bordered">
+<thead>
+<tr>
+<td >
+<p><strong>Excellent</strong></p>
+</td>
+<td>
+<p><strong>Very Good</strong></p>
+</td>
+<td >
+<p><strong>Good</strong></p>
+</td>
+<td>
+<p><strong>Average</strong></p>
+</td>
+<td >
+<p><strong>Poor</strong></p>
+</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td >
+<p><strong>4.6 - 5</strong></p>
+</td>
+<td >
+<p><strong>4.1 - 4.5</strong></p>
+</td>
+<td>
+<p><strong>3.6 &ndash; 4.0</strong></p>
+</td>
+<td>
+<p><strong>3.0 - 3.5</strong></p>
+</td>
+<td >
+<p><strong>&lt; 3</strong></p>
+</td>
+</tr>
+</tbody>
+</table>
+    <label for="t">Enter your feedback: </label>
+
+    <table class="table table-bordered" id="t">
+    <thead>
+    <tr>
+        <th>No.</th>
+        <th>Question</th>
+        <th>Feedback</th>
+    </tr>
+    </thead>
+    <tbody>
+    {% for i in dict_ques %}
+        <tr>
+        <td>{{ i }}</td>
+        <td>{{ dict_ques[i] }}</td>
+        <td>
+            <label>
+                <input class="form-control" type="number" min="1" max="5" id="{{ i }}" name="{{ i }}" step="0.1" required>
+            </label>
+        </td>
+        </tr>
+    {% endfor %}
+    </tbody>
+    </table>
+    {% endif %}
+    {% if type == "LAB" %}
+        <table class="table table-bordered" id="t">
+    <thead>
+    <tr>
+        <th>No.</th>
+        <th>Question</th>
+        <th>LAB-1</th>
+        <th>LAB-2</th>
+        <th>LAB-3</th>
+        <th>LAB-4</th>
+    </tr>
+    </thead>
+    <tbody>
+    {% for i in dict_ques %}
+        <tr>
+        <td>{{ i }}</td>
+        <td>{{ dict_ques[i] }}</td>
+        <td>
+            <label>
+                <input type="text" class="form-control" id="lab1{{ i }}" name="lab1{{ i }}" required>
+            </label>
+        </td>
+        <td>
+            <label>
+                <input type="text" class="form-control" id="lab2{{ i }}" name="lab2{{ i }}" required>
+            </label>
+        </td>
+        <td>
+            <label>
+                <input type="text" class="form-control" id="lab3{{ i }}" name="lab3{{ i }}" required>
+            </label>
+        </td>
+        <td>
+            <label>
+                <input type="text" class="form-control" id="lab4{{ i }}" name="lab4{{ i }}" required>
+            </label>
+        </td>
+        </tr>
+    {% endfor %}
+    </tbody>
+    </table>
+    {% endif %}
+    <input type="submit" class="form-control">
+    <br>
+    </form>
+    </div>
+{% endblock content %}
