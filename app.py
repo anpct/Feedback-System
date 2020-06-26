@@ -2,11 +2,12 @@ from flask import Flask, render_template, request, redirect, url_for, send_file
 import json
 from flask_pymongo import PyMongo
 import datetime
+import os
 
 app = Flask(__name__)
 json_file = open('static/questions.json', 'r')
 q = json.load(json_file)
-app.config["MONGO_URI"] = "************"
+app.config["MONGO_URI"] = os.environ.get('DB_STRING')
 mongo = PyMongo(app)
 
 
