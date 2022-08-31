@@ -5,7 +5,7 @@ import datetime
 import os
 
 app = Flask(__name__)
-json_file = open('static/questions.json', 'r')
+json_file = open('static/questions.json', 'r+', encoding="utf-8")
 q = json.load(json_file)
 app.config["MONGO_URI"] = os.environ.get('DB_STRING')
 mongo = PyMongo(app)
