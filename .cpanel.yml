@@ -8,3 +8,4 @@ deployment:
     - /bin/cp -R templates $DEPLOYPATH
     - /bin/cp -R app.py $DEPLOYPATH
     - /bin/cp -R requirements.txt $DEPLOYPATH
+    - /bin/cp -R passenger_wsgi.py $DEPLOYPATH
